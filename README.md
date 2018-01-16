@@ -78,13 +78,13 @@ rspec
 
 ### Development
 
-After you've set up the project, you can run the server.
+After you've set up the project, you can run the server. Any changes to files in `app/javascript` will automatically recompile assets on your next request.
 
 ```
 bundle exec rails s -p 3000
 ```
 
-Once the server is up using the above command, you can access the application at [http://localhost:3000/home](http://localhost:3000/home).
+You can access the application at [http://localhost:3000/home](http://localhost:3000/home) once the server is up using the above command.
 
 ### Production
 
