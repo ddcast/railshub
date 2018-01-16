@@ -1,0 +1,40 @@
+<p>
+  Hi, {{ctrl.username}}! RailsHub is a rudimentary query services for the public Rails GitHub project. - Devin
+</p>
+
+<h4>Order by</h4>
+
+<div class="mdc-switch">
+  <input type="checkbox" id="basic-switch-2" class="mdc-switch__native-control" ng-model="ctrl.byCommentCount" ng-change="ctrl.updateView()"/>
+  <div class="mdc-switch__background">
+    <div class="mdc-switch__knob"></div>
+  </div>
+</div>
+<label for="basic-switch-2" class="mdc-switch-label">Comment Count</label>
+
+<h4>Components</h4>
+
+<div ng-repeat="component in ctrl.components">
+  <div style="margin-bottom: 1em;">
+    <div class="mdc-switch">
+      <input type="checkbox" id="{{'basic-switch-' + component}}" class="mdc-switch__native-control" ng-model="ctrl.byComponent[component]" ng-change="ctrl.updateView()"/>
+      <div class="mdc-switch__background">
+        <div class="mdc-switch__knob"></div>
+      </div>
+    </div>
+    <label for="{{'basic-switch-' + component}}" class="mdc-switch-label">{{component}}</label>
+  </div>
+</div>
+
+<h4>Results</h4>
+<ul class="mdc-list mdc-list--two-line">
+  <li class="mdc-list-item" ng-repeat="issue in ctrl.issues" style="margin-bottom: 1em;">
+    <span class="mdc-list-item__text">
+      {{issue.title}} <strong>{{issue.components}}</strong>
+      <span class="mdc-list-item__secondary-text">{{issue.created_at}}</span>
+    </span>
+    <span style="margin-left: auto;">
+      {{issue.comments}} Comments
+    </span>
+  </li>
+</ul>

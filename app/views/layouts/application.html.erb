@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouEarnedIt</title>
+    <!-- Protect against CSRF -->
+    <%= csrf_meta_tags %>
+    <!-- So that mobile devices render correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Material Design to manage UI components and layout -->
+    <%= stylesheet_link_tag 'material-components-web/dist/material-components-web.css' %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+
+  <body class="mdc-typography" style="margin: 3em;">
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "engines": {
+    "node": ">=4.3.0",
+    "npm": "3.10.10",
+    "yarn": ">= 0.25.2"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.10.1"
+  },
+  "dependencies": {
+    "@rails/webpacker": "^3.2.0",
+    "angular": "1.5.3",
+    "angular-resource": "1.5.8",
+    "angular-sanitize": "1.5.3",
+    "angular-ui-router": "0.3.2",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "coffeescript": "1.12.7",
+    "jquery": "^3.2.1",
+    "material-components-web": "^0.28.0",
+    "ng-annotate": "1.2.1",
+    "ng-annotate-loader": "^0.6.1",
+    "ng-annotate-patched": "^1.6.0",
+    "raw-loader": "^0.5.1"
+  }
+}
