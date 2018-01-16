@@ -53,6 +53,8 @@ module Railshub
 
           begin
             issue.save!
+            data_import_counter(data)
+            print '.'
           rescue ActiveRecord::RecordNotUnique
             print error_record_not_unique(item['id'])
           rescue => error
@@ -76,8 +78,6 @@ module Railshub
             end
           end
 
-          print '.'
-
           issue.github_id.to_s
         else
           # TODO: Handle as error
@@ -86,8 +86,6 @@ module Railshub
           '' # Return empty value
         end
       end
-
-      @import_count += data.reject(&:empty?).count
 
       if link[:next]
         # TODO: Delay task?
@@ -123,6 +121,10 @@ module Railshub
       end
 
       links
+    end
+
+    def self.data_import_counter(data)
+      @import_count += data.reject(&:empty?).count
     end
   end
 end
