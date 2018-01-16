@@ -6,9 +6,8 @@ To help YouEarnedIt learn a little about how I work and write code, I spent a fe
 
 ### Dependencies
 
-- Ruby >= 2.3.3
+- Ruby >= 2.2.2
 - Node.js >= 4.3.0 < 5.0.0 || >= 5.10
-- Bundler ~1.16.1
 - Yarn ~1.3.2
 
 ### Confirm Your Environment
@@ -25,10 +24,10 @@ If you don't have a suitable version of Node.js (see above), install a recent ve
 $ nvm install v6
 ```
 
-Install Bundler. Note: You may need to `sudo`.
+This project was bundled with Bundler `1.16.1`. Use this command to install Bundler. Note: You may need to `sudo`.
 
 ```
-$ gem install bundler -v 1.16.1
+$ gem install bundler
 ```
 
 Install Yarn.
@@ -95,4 +94,3 @@ The Procfile in this project will help you easily deploy this application to Her
 WEB_CONCURRENCY=3
 RAILS_ENV=production
 ```
-
