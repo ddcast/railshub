@@ -1,8 +1,8 @@
 # railshub
 
-Youearnedit-railshub is a YEI Ruby code challenge solution.
+railshub is a YEI Ruby code challenge solution.
 
-To help companies learn a little about how I work and write code in a Rails context, I spent a few hours on solving the code problem [here](https://github.com/youearnedit/yei_challenge_ruby). The solution provided in this project is a Rails app with an adapter for the GitHub API (v3, unauthenticated) that uses a HTTP library to make requests, a parser to handle the response data that is persisted into SQLite wrapped using ActiveRecord. To bring it all together, I built a small front-end app using AngularJS with webpack to manage its dependencies via the Rails asset pipeline.
+To help companies learn a little about how I work and write code in a Rails context, I originally spent a few hours on solving the code problem [here](https://github.com/youearnedit/yei_challenge_ruby). The solution provided in this project is a Rails app with an adapter for the GitHub API (v3, unauthenticated) that uses a HTTP library to make requests, a parser to handle the response data that is persisted into SQLite wrapped using ActiveRecord. To bring it all together, I built a small front-end app using AngularJS with webpack to manage its dependencies via the Rails asset pipeline.
 
 ### Dependencies
 
