@@ -15,7 +15,7 @@
     "angular-ui-router": "0.3.2",
     "babel-plugin-module-resolver": "^2.7.1",
     "coffeescript": "1.12.7",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "material-components-web": "^0.28.0",
     "ng-annotate": "1.2.1",
     "ng-annotate-loader": "^0.6.1",
